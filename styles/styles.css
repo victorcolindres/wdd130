@@ -2,16 +2,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navigation */
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
 /* Main content */
 main {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Heading */
+h1 {
+    color: steelblue;
+}
+
 /* Profile image inside main */
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #000;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
 }
 
 /* Paragraph settings */
