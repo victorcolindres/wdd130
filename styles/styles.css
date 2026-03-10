@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph settings */
+p {
+    padding: 0;
+}
+
+/* Aside section */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #999;
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #333;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #999;
+    text-align: center;
+}
