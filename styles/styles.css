@@ -1,8 +1,17 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navigation */
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+/* NAV */
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -14,50 +23,84 @@ nav a {
     display: block;
 }
 
-/* Main content */
+/* MAIN */
 main {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Heading */
+/* H1 */
 h1 {
     color: steelblue;
+    margin-bottom: 1rem;
 }
 
-/* Profile image inside main */
+/* IMAGEN PERFIL */
 main img {
-    width: 150px;
-    height: auto;
+    float: right;
+    width: 120px;
+    margin: 0 0 1rem 1rem;
     border: 1px solid #000;
     padding: 2px;
     box-shadow: 0 0 10px gray;
 }
 
-/* Paragraph settings */
+/* CLEAR */
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* TEXTO */
 p {
+    line-height: 1.6;
+}
+
+/* 🔥 ASIDE CENTRADO CORRECTAMENTE */
+aside {
+    width: 320px;
+    margin: 20px auto;
+    /* 🔥 centra TODO */
+    border: 1px solid #999;
+    background-color: #eeeeee;
+    position: relative;
     padding: 0;
 }
 
-/* Aside section */
-aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #999;
-    padding: 10px;
-    background-color: #eeeeee;
-    color: #333;
-}
-
-/* Image inside aside */
+/* IMAGEN */
 aside img {
-    width: 200px;
-    height: auto;
+    width: 100%;
+    display: block;
 }
 
-/* Footer styling */
+/* 🔥 OVERLAY CORRECTO (centrado visualmente) */
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    /* 🔥 centro horizontal */
+    transform: translateX(-50%);
+    /* 🔥 centra perfecto */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+}
+
+/* TEXTO */
+aside p {
+    padding: 10px;
+}
+
+/* FOOTER */
 footer {
+    text-align: center;
     margin-top: 20px;
     border-top: 1px solid #999;
-    text-align: center;
+}
+
+/* BOX */
+.box {
+    margin: 1rem auto;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
 }
