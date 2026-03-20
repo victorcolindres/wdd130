@@ -1,0 +1,142 @@
+/* VARIABLES */
+:root {
+    --primary-color: #0a3d62;
+    --secondary-color: #3c6382;
+    --accent1-color: #1e3799;
+    --accent2-color: #f5f6fa;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: white;
+}
+
+/* WIDTH */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    width: 120px;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* SPACING */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+/* HERO IMAGE */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* HERO TITLE */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* HERO ARTICLE (CUADRO DEBAJO DEL TÍTULO) */
+.hero article {
+    position: absolute;
+    top: 120px;
+    /* 🔥 debajo del título */
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* IMAGEN MÁS GRANDE */
+.hero article img {
+    float: right;
+    width: 180px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+section {
+    background-color: #f8f9fa;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 10px;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    margin: 5px;
+}
