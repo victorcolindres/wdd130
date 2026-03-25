@@ -11,34 +11,95 @@ body {
     padding: 1rem;
 }
 
-/* NAV */
-nav {
-    background-color: steelblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-}
-
-/* MAIN */
-main {
-    max-width: 800px;
+/* 🔥 HEADER, GRID Y FOOTER CENTRADOS */
+header,
+.grid,
+footer {
+    max-width: 840px;
     margin: 0 auto;
 }
 
-/* H1 */
+/* NAV (FLEX) */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* LINKS */
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 🔥 H1 */
 h1 {
     color: steelblue;
     margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    white-space: nowrap;
 }
 
-/* IMAGEN PERFIL */
+/* 🔥 GRID CONTENEDOR */
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    /* 🔥 evita que se baje */
+}
+
+/* 🔥 ASIDE */
+aside {
+    width: 20rem;
+    border: 1px solid #999;
+    background-color: #eeeeee;
+    position: relative;
+    grid-column: 1/2;
+    margin: 0;
+    /* 🔥 evita desalineación */
+}
+
+/* IMAGEN */
+aside img {
+    width: 100%;
+    display: block;
+}
+
+/* 🔥 TEXTO SOBRE IMAGEN */
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+/* TEXTO */
+aside p {
+    padding: 10px;
+}
+
+/* 🔥 MAIN */
+main {
+    grid-column: 2/3;
+    margin: 0;
+}
+
+/* 🔥 IMAGEN PERFIL (MÁS GRANDE) */
 main img {
     float: right;
-    width: 120px;
+    width: 160px;
+    /* 🔥 aumentado */
     margin: 0 0 1rem 1rem;
     border: 1px solid #000;
     padding: 2px;
@@ -57,40 +118,6 @@ p {
     line-height: 1.6;
 }
 
-/* 🔥 ASIDE CENTRADO CORRECTAMENTE */
-aside {
-    width: 320px;
-    margin: 20px auto;
-    /* 🔥 centra TODO */
-    border: 1px solid #999;
-    background-color: #eeeeee;
-    position: relative;
-    padding: 0;
-}
-
-/* IMAGEN */
-aside img {
-    width: 100%;
-    display: block;
-}
-
-/* 🔥 OVERLAY CORRECTO (centrado visualmente) */
-aside h2 {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    /* 🔥 centro horizontal */
-    transform: translateX(-50%);
-    /* 🔥 centra perfecto */
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 5px 10px;
-}
-
-/* TEXTO */
-aside p {
-    padding: 10px;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -98,9 +125,19 @@ footer {
     border-top: 1px solid #999;
 }
 
-/* BOX */
+/* 🔥 BOX (MEJORADO) */
 .box {
-    margin: 1rem auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
     border: 1px solid #333;
     background-color: #f0f0f0;
+    overflow: hidden;
+    /* 🔥 evita que se salgan */
+}
+
+/* 🔥 LINKS DENTRO DEL BOX */
+.box a {
+    display: block;
+    word-break: break-word;
 }
