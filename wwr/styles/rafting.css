@@ -19,7 +19,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: white;
 }
 
 /* WIDTH */
@@ -30,13 +29,13 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER GRID */
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
 }
 
@@ -44,16 +43,18 @@ header img {
     width: 120px;
 }
 
-/* NAV */
+/* NAV FLEX */
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
+    gap: 20px;
 }
 
 nav a {
     color: var(--accent2-color);
     text-decoration: none;
-    padding: 10px;
+    font-weight: bold;
 }
 
 /* HEADINGS */
@@ -61,6 +62,7 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 /* SPACING */
@@ -77,66 +79,95 @@ article {
     position: relative;
 }
 
-/* HERO IMAGE */
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
-/* HERO TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
-    opacity: 0.85;
     background-color: var(--accent1-color);
     color: white;
 }
 
-/* HERO ARTICLE (CUADRO DEBAJO DEL TÍTULO) */
 .hero article {
     position: absolute;
     top: 120px;
-    /* 🔥 debajo del título */
     left: 20px;
     right: 20px;
     background-color: var(--secondary-color);
     color: white;
     padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
 }
 
-/* IMAGEN MÁS GRANDE */
 .hero article img {
     float: right;
     width: 180px;
-    margin-left: 15px;
+}
+
+/* HISTORY GRID */
+.history {
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 150px;
     border-radius: 10px;
 }
 
-/* SECTIONS */
-section {
-    background-color: #f8f9fa;
+.history-content p {
+    text-align: justify;
+}
+
+/* ADVENTURES */
+.adventure-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    font-size: 14px;
 }
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    text-align: center;
-    padding: 10px;
 }
 
-/* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
     width: 30px;
-    margin: 5px;
 }
