@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
 
     <meta name="description"
-      content="Discover Extreme Rafting Adventures, our history, mission, and thrilling outdoor experiences designed for adventure lovers.">
+      content="Contact Us - Extreme Rafting Adventures. Reach out for reservations, general inquiries, or website suggestions.">
 
     <meta name="author" content="Victor Hugo Colindres Corea">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us - Extreme Rafting Adventures</title>
+    <title>Contact Us - Extreme Rafting Adventures</title>
 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -32,69 +32,114 @@
 
     <main>
 
-        <!-- HERO (NO ES SECTION) -->
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure">
+        <!-- COMPANY INFO + MAP + FORM -->
+        <section class="contact-info">
 
-            <h1>Extreme Rafting Adventures</h1>
+            <div class="company-details">
+                <h1>Extreme Rafting Adventures</h1>
+                <p>Suchitoto, Cuscatlán, El Salvador</p>
+                <p>+503 2222-3333</p>
+                <p><a href="mailto:info@extremerafting.com">info@extremerafting.com</a></p>
+            </div>
 
-            <article>
-                <img src="images/employee.jpg" alt="Happy Client">
-                <p>
-                    At Extreme Rafting Adventures, our mission is to deliver unforgettable rafting
-                    experiences that combine adventure, safety, and connection with nature.
-                </p>
-            </article>
-        </div>
+            <div class="contact-layout">
 
-        <!-- SECTION 1 -->
-        <section class="history">
-            <h2>History</h2>
+                <!-- GOOGLE MAP -->
+                <div class="map-container">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.3434410867144!2d-89.0159126262497!3d13.938144892954634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6369651f88c07b%3A0x4db2b5eba3ac060f!2sMirador%20Cascada%20Los%20Tercios%20-%20Suchitoto!5e0!3m2!1ses!2ssv!4v1775187575966!5m2!1ses!2ssv"
+                      width="100%" height="300" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Mirador Cascada Los Tercios - Suchitoto, El Salvador">
+                    </iframe>
+                </div>
 
-            <div class="history-content">
-                <p>
-                    Extreme Rafting Adventures was founded in 2010 by a group of outdoor enthusiasts
-                    who shared a passion for rivers and adventure.
-                </p>
+                <!-- CONTACT FORM -->
+                <div class="contact-form">
+                    <form action="#" method="post">
 
-                <img src="images/history.jpg" alt="Rafting History">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name">
+                        </div>
 
-                <p>
-                    Over the years, Extreme Rafting Adventures has grown into a trusted company,
-                    offering unforgettable experiences full of excitement and teamwork.
-                </p>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                              placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Message Purpose</legend>
+
+                                <label>
+                                    <input type="radio" name="purpose" value="general"> General
+                                    Inquiry
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="purpose" value="reservation">
+                                    Reservation Question
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="purpose" value="suggestion"> Website
+                                    Suggestion
+                                </label>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                              placeholder="Type here"></textarea>
+                        </div>
+
+                        <div class="form-group form-checkbox">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="subscribe">
+                                Please subscribe me to the monthly newsletter
+                            </label>
+                        </div>
+
+                        <button type="submit">Get in Touch!</button>
+
+                    </form>
+                </div>
+
             </div>
         </section>
 
-        <!-- SECTION 2 -->
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
+        <!-- EMPLOYEE PROFILES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
 
-            <div class="adventure-gallery">
+            <div class="employee-gallery">
 
                 <figure>
-                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/employee1.jpg" alt="Alex Rivera - Lead River Guide">
+                    <figcaption>
+                        <p>Alex Rivera</p>
+                        <p>Lead River Guide</p>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/adventure2.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/employee2.jpg" alt="Jordan Lee - Safety Officer">
+                    <figcaption>
+                        <p>Jordan Lee</p>
+                        <p>Safety Officer</p>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventure4.jpg" alt="Rapid Rush">
-                    <figcaption>Rapid Rush</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventure5.jpg" alt="Wild River">
-                    <figcaption>Wild River</figcaption>
+                    <img src="images/employee3.jpg"
+                      alt="Morgan Smith - Customer Experience Manager">
+                    <figcaption>
+                        <p>Morgan Smith</p>
+                        <p>Customer Experience Manager</p>
+                    </figcaption>
                 </figure>
 
             </div>

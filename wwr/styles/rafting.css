@@ -90,7 +90,7 @@ article {
     width: 100%;
     padding: 16px;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--accent2-color);
 }
 
 .hero article {
@@ -99,7 +99,7 @@ article {
     left: 20px;
     right: 20px;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--accent2-color);
     padding: 15px;
 }
 
@@ -223,7 +223,7 @@ footer {
 .form-group input[type="email"],
 .form-group textarea {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
     width: 100%;
@@ -255,9 +255,8 @@ footer {
 
 .contact-form button[type="submit"] {
     padding: 0.75rem 1.5rem;
-    background-color: #6a5acd;
-    /* ajusta al color de tu sitio */
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -266,12 +265,12 @@ footer {
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #5a4abf;
+    background-color: var(--secondary-color);
 }
 
 /* EMPLOYEES */
 .employees {
-    background-color: #f0f0f0;
+    background-color: var(--accent2-color);
     padding: 2rem;
     text-align: center;
 }
@@ -299,7 +298,7 @@ footer {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
 }
 
 .employee-gallery figcaption p {
