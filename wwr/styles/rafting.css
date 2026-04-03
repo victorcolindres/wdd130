@@ -25,7 +25,7 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
 }
 
@@ -157,12 +157,15 @@ footer {
     align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 10px;
 }
 
 .socialmedia {
     display: flex;
     gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
@@ -180,21 +183,24 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.company-details h1 {
+    margin-bottom: 0.5rem;
+}
+
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
+    text-align: left;
     margin-top: 1.5rem;
 }
 
 /* MAP */
 .map-container iframe {
     width: 100%;
-    max-width: 100%;
     height: 300px;
-    border: 0;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* FORM */
@@ -214,9 +220,10 @@ footer {
     font-weight: bold;
 }
 
-.form-group input,
+.form-group input[type="text"],
+.form-group input[type="email"],
 .form-group textarea {
-    padding: 0.6rem;
+    padding: 0.5rem;
     border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -247,18 +254,18 @@ footer {
     gap: 0.5rem;
 }
 
-/* BUTTON */
-.contact-form button {
-    padding: 0.75rem;
+.contact-form button[type="submit"] {
+    padding: 0.75rem 1.5rem;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    width: 100%;
 }
 
-.contact-form button:hover {
+.contact-form button[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
 
@@ -269,11 +276,22 @@ footer {
     text-align: center;
 }
 
+.employees h2 {
+    margin-bottom: 1.5rem;
+}
+
 .employee-gallery {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .employee-gallery img {
@@ -284,15 +302,11 @@ footer {
     border: 2px solid #cccccc;
 }
 
-/* 🔥 RESPONSIVE (CLAVE PARA LA TAREA) */
-@media (max-width: 768px) {
-    .contact-layout {
-        grid-template-columns: 1fr;
-    }
+.employee-gallery figcaption p {
+    margin: 0;
+    text-align: center;
+}
 
-    header,
-    main,
-    footer {
-        padding: 0 10px;
-    }
+.employee-gallery figcaption p:first-child {
+    font-weight: bold;
 }
